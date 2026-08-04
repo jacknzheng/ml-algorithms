@@ -1,7 +1,7 @@
 [project]
-name = "ml-algorithms"
+name = "pretraining"
 version = "0.1.0"
-description = "Add your description here"
+description = "Pretraining architectures implemented from scratch in PyTorch"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
