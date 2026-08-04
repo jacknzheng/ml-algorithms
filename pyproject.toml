@@ -7,6 +7,8 @@ requires-python = ">=3.12"
 dependencies = [
     "einops>=0.8.2",
     "hf>=1.25.1",
+    "nbformat>=5.10.4",
+    "nbimporter>=0.3.4",
     "numpy>=2.5.1",
     "torch>=2.13.0",
 ]
