@@ -13,28 +13,28 @@ pretraining/   package for implementations promoted out of the notebooks
 
 ## `notebooks/attention.ipynb`
 
-| | status |
-|---|---|
-| Dot product attention | done, verified vs. reference |
-| MHA (looped + einsum) | done, verified |
-| MHA with KV cache | done, prefill == decode verified |
-| GQA | done, prefill == decode verified |
-| MLA | done, prefill == decode verified |
-| Linear attention (naive) | done |
-| Linear attention with chunking | not started |
+|                                | status                           |
+| ------------------------------ | -------------------------------- |
+| Dot product attention          | done, verified vs. reference     |
+| MHA (looped + einsum)          | done, verified                   |
+| MHA with KV cache              | done, prefill == decode verified |
+| GQA                            | done, prefill == decode verified |
+| MLA                            | done, prefill == decode verified |
+| Linear attention (naive)       | done                             |
+| Linear attention with chunking | not started                      |
 
 No rotary/positional embeddings yet.
 
 ## `notebooks/moe.ipynb`
 
-| | status |
-|---|---|
-| `Expert`, `Router` | done |
-| `MoeBlock` — top-k routing, shared experts | done |
-| Router load-balancing loss | not started — `full_router_probs` is returned, loss not written |
-| `MoeTransformer` | in progress — holds an `MLA` + `MoeBlock`, no `forward` yet |
-| `MoeGPT` | in progress — empty `__init__` |
-| Latent MoE (Kimi K3) | not started |
+|                                            | status                                                          |
+| ------------------------------------------ | --------------------------------------------------------------- |
+| `Expert`, `Router`                         | done                                                            |
+| `MoeBlock` — top-k routing, shared experts | done                                                            |
+| Router load-balancing loss                 | not started — `full_router_probs` is returned, loss not written |
+| `MoeTransformer`                           | in progress — holds an `MLA` + `MoeBlock`, no `forward` yet     |
+| `MoeGPT`                                   | in progress — empty `__init__`                                  |
+| Latent MoE (Kimi K3)                       | not started                                                     |
 
 MLA is copy-pasted into this notebook rather than imported from `attention.ipynb`, so the
 two copies can drift.
@@ -54,12 +54,9 @@ Scratch space for PyTorch indexing semantics — `nonzero(as_tuple=True)`, `inde
 
 ## `pretraining/`
 
-| | status |
-|---|---|
+|                  | status                     |
+| ---------------- | -------------------------- |
 | `deepseek-v3.py` | not started — comment only |
-
-Not an importable package yet (no `__init__.py`, and the hyphen in `deepseek-v3` is not a
-valid module name).
 
 ## Setup
 
